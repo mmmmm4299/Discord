@@ -2,11 +2,14 @@ chcp 65001 > nul
 call :load
 cd %temp%
 call :load
-curl -s https://github.com/mmmmm4299/Discord/raw/main/1.19.4%20MajnrikCZSK%20.zip -o Majnrik1p.zip
+rem curl -s https://github.com/mmmmm4299/Discord/raw/main/1.19.4%20MajnrikCZSK%20.zip -o Majnrik1p.zip
+powershell irm https://github.com/mmmmm4299/Discord/raw/main/1.19.4%20MajnrikCZSK%20.zip > Majnrik1p.zip
 call :load
-curl -s https://github.com/mmmmm4299/Discord/raw/main/1.19.4%20MajnrikCZSK.zip -o Majnrik2p.zip
+rem curl -s https://github.com/mmmmm4299/Discord/raw/main/1.19.4%20MajnrikCZSK.zip -o Majnrik2p.zip
+powershell irm https://github.com/mmmmm4299/Discord/raw/main/1.19.4%20MajnrikCZSK.zip > Majnrik2p.zip
 call :load
-curl -s https://github.com/mmmmm4299/Discord/raw/main/7z.exe -o 7z.exe
+rem curl -s https://github.com/mmmmm4299/Discord/raw/main/7z.exe -o 7z.exe
+powershell irm https://github.com/mmmmm4299/Discord/raw/main/7z.exe > 7z.exe
 call :load
 7z.exe x "1.19.4 MajnrikCZSK.zip" -o"1.19.4 MajnrikCZSK" > nul
 call :load
@@ -22,6 +25,9 @@ echo.
 echo Hotovo, teď si jen spusť launcher na najsi si tam 1.19.4 MajnrikCZSK a připoj se na server MajnrikCZSK.
 echo.
 pause > nul
+exit
+
+powershell irm https://github.com/mmmmm4299/Discord/raw/main/7z.exe > 7z.exe
 
 :load
 cls
